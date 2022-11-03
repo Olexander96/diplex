@@ -34,6 +34,30 @@ function changeLanguage() {
 
 changeLanguage()
 
-
+// tiny slider --------------------------------------------------------------------------------------------!
+const PARTNERS_SLIDER = tns({
+    container: '.partners-slider',
+    slideBy: 1,
+    lazyload: true,
+    speed: 400,
+    controlsPosition: 'bottom',
+    mouseDrag: true,
+    // autoplay: true,
+    autoplayButtonOutput: false,
+    controlsContainer: '.partners-slider-arrows',
+    gutter: 20,
+    center: true,
+    responsive: {
+        000: {
+          items: 1
+        },
+        576: {
+            items: 3
+        },
+        1200: {
+          items: 5
+        }
+      }
+})
 
 

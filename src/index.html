@@ -9,11 +9,18 @@
     <link rel="stylesheet" href="./css/styles.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- tiny slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 <body>
     <h1 class="visually-hidden">Crypto investments</h1>
     <header class="header">
         <div class="container">
+            <button class="header-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <img class="header-logo" src="./img/LOGO.png" alt="diplex-logo">
             <nav class="header-nav">
                 <h2 class="visually-hidden">navigation</h2>
@@ -55,9 +62,16 @@
                             </svg>
                         </a>
                     </li>
+                    <li class="header-contacts__item">
+                        <a class="contact-link" href="#">
+                            <span class="visually-hidden">twitter link</span>
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#twitter-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
-            
         </div>
     </header>
     <main class="main">
@@ -70,8 +84,58 @@
                 <img class="hero-image" src="./img/hero-woman.png" alt="woman-with-logo">
             </div>
         </section>
+        <section class="partners">
+            <h2 class="visually-hidden">partners</h2>
+            <section class="partners-title">
+                <div class="container">
+                    <h3 class="lng-partners-title">Наші партнери</h3>
+                </div>
+            </section>
+            <section class="partners-list">
+                <div class="container">
+                    <ul class="partners-slider-arrows">
+                        <img src="./img/slider-arrow.png" alt="previous-slides">
+                        <img src="./img/slider-arrow.png" alt="next-slides">
+                    </ul>   
+                    <div class="partners-slider">
+                        <img src="./img/partners-slider-1.png" alt="neironix-company">
+                        <img src="./img/partners-slider-2.png" alt="bitex-company">
+                        <img src="./img/partners-slider-3.png" alt="coingecko-company">
+                        <img src="./img/partners-slider-4.png" alt="coincodex-company">
+                        <img src="./img/partners-slider-5.png" alt="maya-group-company">
+                        <img src="./img/partners-slider-1.png" alt="neironix-company">
+                        <img src="./img/partners-slider-2.png" alt="bitex-company">
+                        <img src="./img/partners-slider-3.png" alt="coingecko-company">
+                        <img src="./img/partners-slider-4.png" alt="coincodex-company">
+                        <img src="./img/partners-slider-5.png" alt="maya-group-company">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="about">
+            <h2 class="visually-hidden">about target advertising</h2>
+            <div class="container"> 
+                <img class="about__img" src="./img/about-img.png" alt="logo-ang-woman">
+                <div class="about__info">
+                    <h3 class="lng-about-title">Про нас</h3>
+                    <p class="lng-about-info1">
+                        Рекламна індустрія зіткнулася з багатьма проблемами, особливо коли мова заходить про
+                        точності статистичних даних. Інші послуги при підрахунку кліків дають спотворену статистику,
+                        важко відрізнити живих користувачів від ботів або найнятих "клікерів", які штучно
+                        накручують рекламну статистику, щоб дистриб'ютори стягували підвищену плату.
+                    </p>
+                    <p class="lng-about-info2">
+                        Ми пропонуємо рішення, яке "очищає" трафік та підвищує його якість. 
+                        Рекламна площадка Диплекс.в мережі розроблено власний цифровий алгоритм розміщення, 
+                        за технологією блокчейн, що не має аналогів на ринку. За допомогою нашої технології 
+                        рекламодавці взаємодіють з активною та зацікавленою аудиторією.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Scripts ---->
     <script defer src="./js/scripts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </body>
 </html>

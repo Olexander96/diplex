@@ -8,7 +8,9 @@
                 url('../img/bg-icon-small.svg') 87% 97%,
                 url('../img/bg-icon-small.svg') 97% 20%;
     background-repeat: no-repeat;
-    min-height: calc(100vh - 81px);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     
     .container {
         background: url('../img/bg-dots.png') center 50px;
@@ -17,8 +19,8 @@
         padding-top: 35px;
         padding-bottom: 35px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
@@ -26,19 +28,24 @@
         font-family: 'Ubuntu', 'Arial', sans-serif;
         font-style: normal;
         font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
 
         p {
-            font-size: 40px;
-            line-height: 55px;
+            font-size: 30px;
+            line-height: 1.5;
             color: $black;
-            margin-bottom: 50px;
+            margin-bottom: 35px;
+            text-align: center;
         }
 
         a {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: fit-content;
+            width: 100%;
             min-height: 50px;
             background: $blue;
             border-radius: 5px;
@@ -46,5 +53,9 @@
             padding: 13px 46px;
             color: $white;
         }
+    }
+
+    &-image {
+        max-width: 100%;
     }
 }

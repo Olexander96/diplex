@@ -1,0 +1,17 @@
+.hero {
+
+    .container {
+        flex-direction: row;
+    }
+
+    &-info {
+        align-items: flex-start;
+
+        p {
+            font-size: 40px;
+            line-height: 55px;
+            margin-bottom: 50px;
+            text-align: start;
+        }
+    }
+}
