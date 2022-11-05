@@ -1,0 +1,14 @@
+.benefits {
+
+    .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &-list {
+
+        &__item {
+            margin-bottom: 0px;
+        }
+    }  
+}

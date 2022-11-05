@@ -55,6 +55,13 @@
             flex-direction: row;
 
             &-item {
+                transition: 0.4s;
+
+                &:hover {
+                    a {
+                        color: $blue;
+                    }
+                }
 
                 a {
                     font-family: 'Ubuntu', 'Arial', sans-serif;

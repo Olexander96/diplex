@@ -1,0 +1,21 @@
+.quality {
+
+    .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-servicse {
+        max-width: 50%;
+        margin-bottom: 0px;
+        margin-right: 60px;
+    }
+
+    &-pos {
+        max-width: 50%;
+        flex-direction: column;
+    }
+}

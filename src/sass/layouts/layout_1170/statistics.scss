@@ -1,0 +1,26 @@
+.statistics {
+
+    .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    &-galary {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+
+        &__card {
+            &:nth-of-type(1) {
+                grid-column: 1/1;
+                grid-row: 1/1;
+                justify-content: space-between;
+            }
+
+            img {
+                width: 150px;
+                height: auto;
+            }
+        }
+    }
+}

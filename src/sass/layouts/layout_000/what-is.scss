@@ -1,21 +1,22 @@
-.about {
-    background-color: $white;
+.what-is {
+    background: url('../img/what-is-eclipse-bg-small.png') 0% -300px,
+                url('../img/what-is-eclipse-bg-big.png') 0% -450px,
+                url('../img/what-is-dots-bg.png') 98% 10%,
+                url('../img/what-is-50 000 000.png') 80% 95%;
+    background-repeat: no-repeat;
 
     .container {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 80px;
+        padding-bottom: 80px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    &__img {
-        max-width: 100%;
-        margin-bottom: 30px;
-    }
     &__info {
         @include text-title;
+        margin-bottom: 30px;
 
         h3 {
             font-size: 26px;
@@ -32,5 +33,9 @@
             }
         }
 
+    }
+
+    &__img {
+        max-width: 100%;
     }
 }
