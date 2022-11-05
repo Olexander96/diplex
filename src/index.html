@@ -225,7 +225,54 @@
                 </ul>
             </div>
         </section>
+        <section class="rate">
+            <h2 class="visually-hidden">currency rate</h2>
+            <div class="container">
+                <h3 class="rate-title lng-rate-title">Курси валют</h3>
+                <ul class="rate-list">
+                    <li class="rate-list__item">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#rate-bitcoin-icon"></use>
+                        </svg>
+                        <span class="lng-rate-item1">Курс Bitcoin:</span>
+                        <span class="bitcoin"></span>
+                        <a href="#" class="lng-rate-link1">Купити</a>
+                    </li>
+                    <li class="rate-list__item">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#rate-litecoin-icon"></use>
+                        </svg>
+                        <span class="lng-rate-item2">Курс Litecoin:</span>
+                        <span class="litecoin"></span>
+                        <a href="#" class="lng-rate-link2">Купити</a>
+                    </li>
+                    <li class="rate-list__item">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#rate-dogecoin-icon"></use>
+                        </svg>
+                        <span class="lng-rate-item3">Курс Dogecoin:</span>
+                        <span class="dogecoin"></span>
+                        <a href="#" class="lng-rate-link3">Купити</a>
+                    </li>
+                    <li class="rate-list__item">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#rate-ethereum"></use>
+                        </svg>
+                        <span class="lng-rate-item4">Курс Ethereum:</span>
+                        <span class="ethereum"></span>
+                        <a href="#" class="lng-rate-link4">Купити</a>
+                    </li>
+                    <li class="rate-list__item">
+                        <img src="./img/bg-icon.svg" alt="diplex-coin">
+                        <span class="lng-rate-item5">Курс Diplexcon:</span>
+                        <span class="diplexcoin"></span>
+                        <a href="#" class="lng-rate-link5">Купити</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <section class="quality">
+            <h2 class="visually-hidden">quality service</h2>
             <div class="container">
                 <div class="quality-servicse">
                     <span class="lng-quality-servicse__title">Отримайте високу якість послуг за допомогою Diplex Group.</span>
@@ -236,14 +283,31 @@
                     <img src="./img/quality-servise.png" alt="man-with-diagram">
                 </div>
                 <div class="quality-pos">
-                    <img src="./img/quality-pos.png" alt="upped-statistics-diagram">
                     <span class="lng-quality-pos__title">Що таке Proof-of-Stake (PoS)?</span>
                     <p class="lng-quality-pos__info">Це один із видів майнінгу (PoS – підтвердження частки), в якому використовується 
                         алгоритм розподілу монет у мережі. У процесі майнінгу (у гонитві за людьми) ви отримуєте 
                         винагороду у вигляді додаткових монет. Ідея proof-of-stake полягає у вирішенні проблеми 
                         proof-of-work, пов'язаної з великими енергетичними витратами та фінансовими інвестиціями.
                     </p>
+                    <img src="./img/quality-pos.png" alt="upped-statistics-diagram">
+                    <a href="#" class="lng-quality-pos__link">Перейти в провідник</a>
                 </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <h2 class="visually-hidden">crypto feedback</h2>
+            <div class="container">
+                <h3 class="feedback-title lng-feedback-title">Зворотній зв'язок</h3>
+                <form class="feedback-form" action="#" method="post">
+                    <select name="service" id="service">
+                        <option class="lng-feedback-consult" value="consult">Консультяція щодо платформи</option>
+                        <option class="lng-feedback-buy" value="buy">Покупка DLX</option>
+                        <option class="lng-feedback-other" value="other">Технічні питання</option>
+                    </select>
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="xxxx@gmail.com">
+                    <button class="lng-feedback-submit" type="submit">Відправити</button>
+                </form>
             </div>
         </section>
     </main>

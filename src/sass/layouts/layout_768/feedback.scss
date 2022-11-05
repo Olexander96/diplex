@@ -1,0 +1,40 @@
+.feedback {
+    background: url('../img/bg-icon.svg') 3% 3%, 
+                url('../img/bg-icon.svg') 5% 65%,
+                url('../img/bg-icon-small.svg') 10% 10%,
+                url('../img/bg-icon.svg') 20% 20%,
+                url('../img/bg-icon-small.svg') 33% 93%,
+                url('../img/bg-icon.svg') 45% 98%,
+                url('../img/bg-icon-small.svg') 60% 98%,
+                url('../img/bg-icon-small.svg') 65% 10%,
+                url('../img/bg-icon.svg') 85% 8%,
+                url('../img/bg-icon-small.svg') 95% 15%,
+                url('../img/bg-icon-small.svg') 97% 90%,
+                url('../img/feedback-bg-left.png') 20% 50%,
+                url('../img/feedback-bg-right.png') 80% 50%,
+                url('../img/qualify-bg-dots.png') 10% 10%,
+                url('../img/qualify-bg-dots.png') 35% 90%;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+
+    .container {
+        padding-top: 85px;
+        padding-bottom: 55px;
+    }
+
+    &-title {
+        margin-bottom: 60px;
+    }
+
+    &-form {
+        min-width: fit-content;
+
+        select {
+            min-width: 640px;
+        }
+
+        input {
+            min-width: 640px;
+        }
+    }
+}

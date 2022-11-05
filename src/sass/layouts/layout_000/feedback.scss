@@ -1,0 +1,87 @@
+.feedback {
+    border-top: 1px solid $whiteBorder;
+    border-bottom: 1px solid $whiteBorder;
+    background: url('../img/bg-icon.svg') 3% 3%, 
+                url('../img/bg-icon.svg') 5% 65%,
+                url('../img/bg-icon-small.svg') 10% 10%,
+                url('../img/bg-icon.svg') 20% 20%,
+                url('../img/bg-icon-small.svg') 33% 93%,
+                url('../img/bg-icon.svg') 45% 98%,
+                url('../img/bg-icon-small.svg') 60% 98%,
+                url('../img/bg-icon-small.svg') 65% 10%,
+                url('../img/bg-icon.svg') 85% 8%,
+                url('../img/bg-icon-small.svg') 95% 15%,
+                url('../img/bg-icon-small.svg') 97% 90%,
+                // url('../img/feedback-bg-left.png') 20% 50%,
+                // url('../img/feedback-bg-right.png') 80% 50%,
+                url('../img/qualify-bg-dots.png') 10% 10%,
+                url('../img/qualify-bg-dots.png') 35% 90%;
+    background-repeat: no-repeat;
+    background-color: $whiteBg;
+
+    .container {
+        padding-top: 50px;
+        padding-bottom: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-title {
+        @include text-title;
+        margin-bottom: 40px;
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 100%;
+
+        select {
+            background: url('../img/dropdown-icon-black.svg') no-repeat;
+            background-position-x: calc(50% + 110px);
+            background-position-y: 50%;  
+            min-height: 60px;
+            min-width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid $whiteBorder;
+            background-color: $whiteBg;
+            outline: none;
+            appearance: none;
+            text-align: center;
+            color: $black;
+            cursor: pointer;
+        }
+
+        input {
+            min-height: 60px;
+            min-width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid $whiteBorder;
+            background-color: $whiteBg;
+            outline: none;
+            text-align: center;
+
+            &:nth-of-type(2) {
+                margin-bottom: 30px;
+            }
+        }
+
+        button {
+            @include button-link;
+            font-size: 20px;
+            padding: 13px 50px;
+            min-width: 100%;
+            border: transparent;
+            cursor: pointer;
+
+            &:hover {
+                background: $purpleDark;
+                box-shadow: 5px 2px 2px $black;
+                transform: translateX(3px);
+            }
+        }
+    }
+}

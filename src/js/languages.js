@@ -147,6 +147,62 @@ const langArr = {
         'ua': '1000 транзакцій на секунду, відсутність комісій, перекази без обмежень.',
         'ru': '1000 транзакций в секунду, отсутствие комиссий, переводы без ограничений.',
     },
+    // rate section
+    'rate-title': {
+        'en': 'Exchange rates',
+        'ua': 'Курси валют',
+        'ru': 'Курсы валют',
+    },
+    'rate-item1': {
+        'en': 'Bitcoin rate:',
+        'ua': 'Курс Bitcoin:',
+        'ru': 'Курс Bitcoin:',
+    },
+    'rate-item2': {
+        'en': 'Litecoin rate:',
+        'ua': 'Курс Litecoin:',
+        'ru': 'Курс Litecoin:',
+    },
+    'rate-item3': {
+        'en': 'Dogecoin rate:',
+        'ua': 'Курс Dogecoin:',
+        'ru': 'Курс Dogecoin:',
+    },
+    'rate-item4': {
+        'en': 'Ethereum rate:',
+        'ua': 'Курс Ethereum:',
+        'ru': 'Курс Ethereum:',
+    },
+    'rate-item5': {
+        'en': 'Diplexcoin rate:',
+        'ua': 'Курс Diplexcoin:',
+        'ru': 'Курс Diplexcoin:',
+    },
+    'rate-link1': {
+        'en': 'Buy',
+        'ua': 'Купити',
+        'ru': 'Купить',
+    },
+    'rate-link2': {
+        'en': 'Buy',
+        'ua': 'Купити',
+        'ru': 'Купить',
+    },
+    'rate-link3': {
+        'en': 'Buy',
+        'ua': 'Купити',
+        'ru': 'Купить',
+    },
+    'rate-link4': {
+        'en': 'Buy',
+        'ua': 'Купити',
+        'ru': 'Купить',
+    },
+    'rate-link5': {
+        'en': 'Buy',
+        'ua': 'Купити',
+        'ru': 'Купить',
+    },
     // quality section
     'quality-servicse__title': {
         'en': 'Get high quality services using the Diplex Group service.',
@@ -167,5 +223,36 @@ const langArr = {
         'en': 'This is one of the types of mining (PoS - proof of share), which uses an algorithm for distributing coins in the network. In the process of mining (chasing people) you get a reward in the form of additional coins. The idea of proof-of-stake is to solve the proof-of-work problem associated with high energy costs and financial investments.',
         'ua': 'Це один із видів майнінгу (PoS – підтвердження частки), в якому використовується алгоритм розподілу монет у мережі. У процесі майнінгу (у гонитві за людьми) ви отримуєте винагороду у вигляді додаткових монет. Ідея proof-of-stake полягає у вирішенні проблеми proof-of-work, пов\'язаної з великими енергетичними витратами та фінансовими інвестиціями.',
         'ru': 'Это один из видов майнинга (PoS - подтверждение доли), в котором используется алгоритм распределения монет в сети. В процессе майнинга (в погоне за людьми) вы получаете вознаграждение в виде дополнительных монет. Идея proof-of-stake заключается в решении проблемы proof-of-work, связанной с большими энергетическими затратами и финансовыми инвестициями.',
+    },
+    'quality-pos__link': {
+        'en': 'Go to explorer',
+        'ua': 'Перейти в провідник',
+        'ru': 'Перейти в проводник',
+    },
+    // feedback section
+    'feedback-title': {
+        'en': 'Feedback',
+        'ua': 'Зворотній зв\'язок',
+        'ru': 'Обратная связь',
+    },
+    'feedback-consult': {
+        'en': 'Platform consultation',
+        'ua': 'Консультяція щодо платформи',
+        'ru': 'Консультация по платформе',
+    },
+    'feedback-buy': {
+        'en': 'Buying DLX',
+        'ua': 'Купівля DLX',
+        'ru': 'Покупка DLX',
+    },
+    'feedback-other': {
+        'en': 'Technical issues',
+        'ua': 'Технічні питання',
+        'ru': 'Технические вопросы',
+    },
+    'feedback-submit': {
+        'en': 'Submit',
+        'ua': 'Відправити',
+        'ru': 'Отправить',
     },
 }

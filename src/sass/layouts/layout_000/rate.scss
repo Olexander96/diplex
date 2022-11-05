@@ -1,0 +1,96 @@
+.rate {
+    
+    .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &-title {
+        @include text-title;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        &__item {
+            @include text-title;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $white;
+            border: 2px solid $whiteBorder;
+            border-radius: 8px;
+            padding: 10px;
+            min-width: 200px;
+
+            &:last-child {
+                background-color: $blue;
+                color: $white;
+
+                a {
+                    background-color: $white;
+                    color: $blue;
+
+                    &:hover {
+                        background: $white;
+                        border: 1px solid $blue;
+                        box-shadow: 5px 2px 2px $white;
+                        transform: translateX(3px);
+                    }
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            span {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .bitcoin, .litecoin, .ethereum, .dogecoin {
+                font-size: 16px;
+                font-weight: 300;
+                color: $blue;
+            }
+
+            .diplexcoin {
+                font-size: 16px;
+                font-weight: 300;
+                color: $white;
+            }
+
+            svg {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 15px;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 15px;
+            }
+
+            a {
+                @include button-link;
+                padding: 10px 10px;
+                max-width: 100px;
+                font-size: 20px;
+
+                &:hover {
+                    background: $purpleDark;
+                    box-shadow: 5px 2px 2px $black;
+                    transform: translateX(3px);
+                }
+            }
+        }
+    }
+}
