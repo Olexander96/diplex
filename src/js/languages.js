@@ -26,6 +26,12 @@ const langArr = {
         'ua': 'Співробітництво',
         'ru': 'Сотрудничество',
     },
+    // intro section
+    'intro-title': {
+        'en': 'Welcome to Diplex Group',
+        'ua': 'Вас вітає Diplex Group',
+        'ru': 'Вас приветствует Diplex Group',
+    },
     // hero section
     'hero-info': {
         'en': 'With Diplex investing in cryptocurrency is easy!',

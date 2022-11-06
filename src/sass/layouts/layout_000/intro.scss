@@ -1,0 +1,38 @@
+.intro {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__media {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    &__content {
+        z-index: 2;
+        position: absolute;
+        @include text-title;
+        color: $white;
+    }
+    a {
+        position: absolute;
+        bottom: 5px;
+        left: calc(50% - 15px);
+        z-index: 2;
+
+        svg {
+            width: 30px;
+            height: 30px;
+            fill: $white;
+        }
+    }
+}

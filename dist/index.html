@@ -77,7 +77,20 @@
         </div>
     </header>
     <main class="main">
-        <section class="hero">
+        <section class="intro">
+            <h2 class="visually-hidden">greeting diplex</h2>
+            <video class="intro__media" src="./video/video-bg.mp4" type="video" autoplay muted loop></video>
+            <div class="intro__content">
+                <h3 class="lng-intro-title">Вас вітає Diplex Group</h3>
+            </div>
+            <a href="#hero">
+                <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#intro-arrow-down"></use>
+                </svg>
+            </a>
+        </section>
+        <section class="hero" id="hero">
+            <h2 class="visually-hidden">buy crypto</h2>
             <div class="container">
                 <div class="hero-info">
                     <p class="lng-hero-info">З Diplex Group інвестувати в криптовалюту легко!</p>
@@ -304,8 +317,14 @@
                         <option class="lng-feedback-buy" value="buy">Покупка DLX</option>
                         <option class="lng-feedback-other" value="other">Технічні питання</option>
                     </select>
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="xxxx@gmail.com">
+                    <label>
+                        <input class="js-input js-input-text" type="text" placeholder="Your name">
+                        <span class="name--error"></span>
+                    </label>
+                    <label>
+                        <input class="js-input js-input-email" type="email" placeholder="xxxx@gmail.com">
+                        <span class="email--error"></span> 
+                    </label>
                     <button class="lng-feedback-submit" type="submit">Відправити</button>
                 </form>
             </div>

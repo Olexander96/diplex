@@ -61,6 +61,11 @@ function svg() {
         .pipe(dest('./dist/img'))
         .pipe(browsersync.stream())
 }
+function video() {
+    return src('./src/video/*.*')
+        .pipe(dest('./dist/video'))
+        .pipe(browsersync.stream())
+}
 
 function browserSync() {
     browsersync.init({
@@ -79,4 +84,4 @@ function watchFiles() {
     watch('./src/*.md', readme);
 }
 
-exports.default = series(clean, parallel(css, js, img, html, readme, svg), parallel(watchFiles, browserSync))
+exports.default = series(clean, parallel(css, js, img, html, readme, svg, video), parallel(watchFiles, browserSync))
