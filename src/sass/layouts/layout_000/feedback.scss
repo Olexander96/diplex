@@ -41,8 +41,8 @@
 
         select {
             background: url('../img/dropdown-icon-black.svg') no-repeat;
-            background-position-x: calc(50% + 110px);
-            background-position-y: 50%;  
+            background-position-x: calc(50% + 130px);
+            background-position-y: calc(50% + 2px);
             min-height: 60px;
             min-width: 100%;
             margin-bottom: 20px;
@@ -53,6 +53,8 @@
             text-align: center;
             color: $black;
             cursor: pointer;
+            @include text-title;
+            font-size: 16px;
         }
 
         label {
@@ -69,7 +71,6 @@
                 span {
                     bottom: 13px;
                 }
-
             }
 
             input {
@@ -79,6 +80,8 @@
                 background-color: $whiteBg;
                 outline: none;
                 text-align: center;
+                @include text-title;
+                font-size: 16px;
             }
             span {
                 @include text-title;
