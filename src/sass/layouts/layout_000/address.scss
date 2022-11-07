@@ -1,0 +1,11 @@
+.address {
+
+    #map {
+        height: 100vh;
+        width: 100%;
+    }
+}
+.map-wondow-text {
+    @include text-title;
+    color: $blue;
+}

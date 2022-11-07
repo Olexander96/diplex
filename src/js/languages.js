@@ -261,4 +261,96 @@ const langArr = {
         'ua': 'Відправити',
         'ru': 'Отправить',
     },
+    // events section
+    'events-title': {
+        'en': 'DLX Development Roadmap',
+        'ua': 'Дорожня карта розвитку DLX',
+        'ru': 'Дорожная карта развития DLX',
+    },
+    'events-text': {
+        'en': 'Planned and already completed',
+        'ua': 'Планується та вже виконано',
+        'ru': 'Планируется и уже выполнено',
+    },
+    'events-card1-date': {
+        'en': 'July 5, 2022',
+        'ua': '5 липня 2022',
+        'ru': '5 июля 2022',
+    },
+    'events-card1-text': {
+        'en': 'Updating the website and features of Diplex online',
+        'ua': 'Оновлення сайту та можливостей Diplex online',
+        'ru': 'Обновление сайта и возможностей Diplex online',
+    },
+    'events-card2-date': {
+        'en': 'July 9, 2022',
+        'ua': '9 липня 2022',
+        'ru': '9 июля 2022',
+    },
+    'events-card2-text': {
+        'en': 'Presentation of the communication platform using Diplex cryptocurrency',
+        'ua': 'Презентація комунікаційної платформи з використанням криптовалюти Diplex',
+        'ru': 'Презентация коммуникационной платформы с использованием криптовалюты Diplex',
+    },
+    'events-card3-date': {
+        'en': 'July 12, 2022',
+        'ua': '12 липня 2022',
+        'ru': '12 июля 2022',
+    },
+    'events-card3-text': {
+        'en': 'Launch of an online perfumery store using Diplex cryptocurrency',
+        'ua': 'Запуск інтернет магазину парфумерії з використанням криптовалюти Diplex',
+        'ru': 'Запуск интернет магазина парфюмерии с использованием криптовалюты Diplex',
+    },
+    'events-card4-date': {
+        'en': 'July 15, 2022',
+        'ua': '15 липня 2022',
+        'ru': '15 июля 2022',
+    },
+    'events-card4-text': {
+        'en': 'Launch of a portal for marketing services using Diplex cryptocurrency',
+        'ua': 'Запуск порталу з маркетингових послуг з використанням криптовалюти Diplex',
+        'ru': 'Запуск портала по маркетинговым услугам с использованием криптовалюты Diplex',
+    },
+    'events-card5-date': {
+        'en': 'July 19, 2022',
+        'ua': '19 липня 2022',
+        'ru': '19 июля 2022',
+    },
+    'events-card5-text': {
+        'en': 'Launch of an online English language academy using Diplex cryptocurrency',
+        'ua': 'Запуск онлайн академії англійської мови з використанням криптовалюти Diplex',
+        'ru': 'Запуск онлайн академии английского языка с использованием криптовалюты Diplex',
+    },
+    'events-card6-date': {
+        'en': 'July 12, 2022',
+        'ua': '12 липня 2022',
+        'ru': '12 июля 2022',
+    },
+    'events-card6-text': {
+        'en': 'Launch of an online perfumery store using Diplex cryptocurrency',
+        'ua': 'Запуск інтернет магазину парфумерії з використанням криптовалюти Diplex',
+        'ru': 'Запуск интернет магазина парфюмерии с использованием криптовалюты Diplex',
+    },
+    // download section
+    'download-title': {
+        'en': 'Download crypto wallet',
+        'ua': 'Завантажити криптогаманець',
+        'ru': 'Скачать криптокошелёк',
+    },
+    'download-link1': {
+        'en': 'Download on Windows',
+        'ua': 'Завантажити на Windows',
+        'ru': 'Cкачать на Windows',
+    },
+    'download-link2': {
+        'en': 'Download on Linux',
+        'ua': 'Завантажити на Linux',
+        'ru': 'Cкачать на Linux',
+    },
+    'download-link3': {
+        'en': 'Open in Telegram',
+        'ua': 'Відкрити в Telegram',
+        'ru': 'Открыть в Telegram',
+    },
 }

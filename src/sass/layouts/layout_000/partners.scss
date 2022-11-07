@@ -24,11 +24,11 @@
         max-width: 100vw;
 
         .container {
+            width: 100%;
             position: relative;
             padding: 50px 40px;
             display: flex;
             align-items: center;
-            max-width: 100vw;
         }
 
         .partners-slider-arrows {
@@ -39,18 +39,21 @@
             flex-direction: row;
             justify-content: space-between;
             left: 0;
-            img {
+
+            svg {
                 width: 18px;
                 height: 36px;
                 cursor: pointer;
+                border: transparent;
+                outline: none;
     
                 &:first-child {
-                    margin-left: 5px;
+                    margin-left: 10px;
                 }
     
                 &:last-child {
                     transform: rotate(180deg);
-                    margin-right: 5px;
+                    margin-right: 10px;
                 }
             }
         }
@@ -62,18 +65,18 @@
     
         }
     }
+    // прибраті додаткові кнопки слайдеру
+    .tns-nav {
+        display: none;
+    }
 
-
+    .tns-outer {
+        max-width: 100% !important;
+    }
 }
 
-// прибраті додаткові кнопки слайдеру
-.tns-nav {
-    display: none;
-}
 
-.tns-item0{
-    max-width: 100% !important;
-}
+
 
 
 

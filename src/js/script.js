@@ -34,28 +34,63 @@ function changeLanguage() {
 
 changeLanguage()
 
-// tiny slider --------------------------------------------------------------------------------------------!
+// tiny slider1 --------------------------------------------------------------------------------------------!
 const PARTNERS_SLIDER = tns({
     container: '.partners-slider',
-    slideBy: 1,
     lazyload: true,
-    speed: 400,
-    controlsPosition: 'bottom',
+    speed: 600,
     mouseDrag: true,
-    // autoplay: true,
+    autoplay: true,
     autoplayButtonOutput: false,
     controlsContainer: '.partners-slider-arrows',
-    gutter: 20,
     center: true,
     responsive: {
         000: {
-          items: 1
+          items: 1,
+          gutter: 0,
+        },
+        340: {
+            items: 2,
+            gutter: 5,
         },
         576: {
-            items: 3
+            items: 3,
+            gutter: 10,
+        },
+        768: {
+            items: 4,
+            gutter: 10,
         },
         1200: {
-          items: 5
+          items: 5,
+          gutter: 20,
+        }
+      }
+})
+
+const EVENTS_SLIDER = tns({
+    container: '.events-slider',
+    // mode: 'gallery',
+    lazyload: true,
+    speed: 500,
+    slideBy: 1,
+    mouseDrag: true,
+    // autoplay: true,
+    autoplayButtonOutput: false,
+    // fixedWidth: 227,
+    autoWidth: true,
+    viewportMax: 'autoWidth',
+    controlsContainer: '.events-slider-arrows',
+    center: true,
+    responsive: {
+        000: {
+          items: 1,
+        },
+        576: {
+            items: 3,
+        },
+        1200: {
+          items: 5,
         }
       }
 })
