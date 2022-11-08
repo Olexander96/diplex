@@ -1,16 +1,50 @@
 .hero {
-    background: url('../img/bg-icon.svg') 12% 20%, 
-                url('../img/bg-icon-small.svg') 25% 8%,
-                url('../img/bg-icon-small.svg') 15% 90%,
-                url('../img/bg-icon.svg') 40% 90%,
-                url('../img/bg-icon-small.svg') 45% 15%,
-                url('../img/bg-icon-small.svg') 55% 65%,
-                url('../img/bg-icon-small.svg') 87% 97%,
-                url('../img/bg-icon-small.svg') 97% 20%;
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
+
+    &-parallax-icon {
+        position: absolute;
+
+        &:nth-of-type(1) {
+            top: 12%;
+            left: 20%;
+        }
+
+        &:nth-of-type(2) {
+            top: 25%;
+            left: 8%;
+        }
+
+        &:nth-of-type(3) {
+            top: 15%;
+            left: 80%;
+        }
+
+        &:nth-of-type(4) {
+            top: 40%;
+            left: 90%;
+        }
+        &:nth-of-type(5) {
+            top: 45%;
+            left: 25%;
+        }
+        &:nth-of-type(6) {
+            top: 55%;
+            left: 65%;
+        }
+        &:nth-of-type(7) {
+            top: 87%;
+            left: 65%;
+        }
+        &:nth-of-type(8) {
+            top: 75%;
+            left: 20%;
+        }
+        
+    }
     
     .container {
         background: url('../img/bg-dots.png') center 50px;
@@ -32,6 +66,7 @@
         flex-direction: column;
         align-items: center;
         max-width: 100%;
+        z-index: 3;
 
         p {
             font-size: 30px;
@@ -55,5 +90,6 @@
 
     &-image {
         max-width: 100%;
+        z-index: 3;
     }
 }

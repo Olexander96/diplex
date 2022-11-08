@@ -1,14 +1,14 @@
 .intro {
 
     &__content {
-        font-size: 30px;
+        font-size: 40px;
     }
     @keyframes text {
         0% {
             color: transparent;
         }
         30% {
-            letter-spacing: 25px;
+            letter-spacing: 40px;
         }
         85% {
             letter-spacing: 6px;

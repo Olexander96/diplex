@@ -1,99 +1,124 @@
-// зміна мови--------------------------------------------------------------------------------------------!
-const SELECT = document.querySelector('.header-dropdown');
+document.addEventListener('DOMContentLoaded', function() {
 
-SELECT.addEventListener('change', changeURL);
+    
+    // зміна мови--------------------------------------------------------------------------------------------!
+    const SELECT = document.querySelector('.header-dropdown');
 
-const allLanguages = ['en', 'ua', 'ru'];
-// додавання приставки hash в кінець url
-function changeURL() {
-    let lang = SELECT.value;
-    location.href = window.location.pathname + "#" + lang;
-    location.reload()
-}
+    SELECT.addEventListener('change', changeURL);
 
-function changeLanguage() {
-    let hash = window.location.hash;
-    hash = hash.substring(1);
-    // console.log(hash)
-    // помилка при невірному url
-    if (!allLanguages.includes(hash)) {
-        location.href = window.location.pathname + "#ua";
+    const allLanguages = ['en', 'ua', 'ru'];
+    // додавання приставки hash в кінець url
+    function changeURL() {
+        let lang = SELECT.value;
+        location.href = window.location.pathname + "#" + lang;
         location.reload()
     }
-    SELECT.value = hash;
-    // зміна мови для title
-    document.querySelector('title').textContent = langArr['title'][hash];
-    
-    for (let key in langArr) {
-        let elem  = document.querySelector(".lng-" + key);
-        if (elem) {
-            elem.textContent = langArr[key][hash];
+
+    function changeLanguage() {
+        let hash = window.location.hash;
+        hash = hash.substring(1);
+        // console.log(hash)
+        // помилка при невірному url
+        if (!allLanguages.includes(hash)) {
+            location.href = window.location.pathname + "#ua";
+            location.reload()
+        }
+        SELECT.value = hash;
+        // зміна мови для title
+        document.querySelector('title').textContent = langArr['title'][hash];
+        
+        for (let key in langArr) {
+            let elem  = document.querySelector(".lng-" + key);
+            if (elem) {
+                elem.textContent = langArr[key][hash];
+            }
         }
     }
-}
 
-changeLanguage()
+    changeLanguage()
 
-// tiny slider1 --------------------------------------------------------------------------------------------!
-const PARTNERS_SLIDER = tns({
-    container: '.partners-slider',
-    lazyload: true,
-    speed: 600,
-    mouseDrag: true,
-    autoplay: true,
-    autoplayButtonOutput: false,
-    controlsContainer: '.partners-slider-arrows',
-    center: true,
-    responsive: {
-        000: {
-          items: 1,
-          gutter: 0,
-        },
-        340: {
-            items: 2,
-            gutter: 5,
-        },
-        576: {
-            items: 3,
-            gutter: 10,
-        },
-        768: {
-            items: 4,
-            gutter: 10,
-        },
-        1200: {
-          items: 5,
-          gutter: 20,
+    // tiny slider1 --------------------------------------------------------------------------------------------!
+    const PARTNERS_SLIDER = tns({
+        container: '.partners-slider',
+        lazyload: true,
+        speed: 600,
+        mouseDrag: true,
+        autoplay: true,
+        autoplayButtonOutput: false,
+        controlsContainer: '.partners-slider-arrows',
+        center: true,
+        responsive: {
+            000: {
+            items: 1,
+            gutter: 0,
+            },
+            340: {
+                items: 2,
+                gutter: 5,
+            },
+            576: {
+                items: 3,
+                gutter: 10,
+            },
+            768: {
+                items: 4,
+                gutter: 10,
+            },
+            1200: {
+            items: 5,
+            gutter: 20,
+            }
         }
-      }
-})
+    })
 
-const EVENTS_SLIDER = tns({
-    container: '.events-slider',
-    lazyload: true,
-    speed: 500,
-    slideBy: 1,
-    mouseDrag: true,
-    autoplay: true,
-    autoplayButtonOutput: false,
-    // fixedWidth: 227,
-    autoWidth: true,
-    controlsContainer: '.events-slider-arrows',
-    // center: true,
-    responsive: {
-        000: {
-          items: 1,
-          center: true,
-        },
-        576: {
-            items: 3,
+    const EVENTS_SLIDER = tns({
+        container: '.events-slider',
+        lazyload: true,
+        speed: 500,
+        slideBy: 1,
+        mouseDrag: true,
+        autoplay: true,
+        autoplayButtonOutput: false,
+        // fixedWidth: 227,
+        autoWidth: true,
+        controlsContainer: '.events-slider-arrows',
+        // center: true,
+        responsive: {
+            000: {
+            items: 1,
+            center: true,
+            },
+            576: {
+                items: 3,
+                center: false,
+            },
+            1200: {
+            items: 5,
             center: false,
-        },
-        1200: {
-          items: 5,
-          center: false,
+            }
+        }   
+    })
+    // prallax --------------------------------------------------------------------------------------------!
+    const PARALAX_ICON1 = hero.querySelector('.hero-parallax1');
+    const PARALAX_ICON2 = hero.querySelector('.hero-parallax2');
+    const PARALAX_ICON3 = hero.querySelector('.hero-parallax3');
+    const PARALAX_ICON4 = hero.querySelector('.hero-parallax4');
+    const PARALAX_ICON5 = hero.querySelector('.hero-parallax5');
+    const PARALAX_ICON6 = hero.querySelector('.hero-parallax6');
+    const PARALAX_ICON7 = hero.querySelector('.hero-parallax7');
+    const PARALAX_ICON8 = hero.querySelector('.hero-parallax8');
+    const fluidcoin = window.matchMedia("(min-width: 576px)");
+    hero.addEventListener('mousemove', function(e) {
+        if (fluidcoin.matches) {
+            PARALAX_ICON1.style.transform = `translate(${e.clientX/4}px, ${e.clientY/4}px)`;
+            PARALAX_ICON2.style.transform = `translate(${e.clientX/14}px, ${e.clientY/14}px)`;
+            PARALAX_ICON3.style.transform = `translate(${e.clientX/10}px, ${e.clientY/10}px)`;
+            PARALAX_ICON4.style.transform = `translate(${e.clientX/7}px, ${e.clientY/7}px)`;
+            PARALAX_ICON5.style.transform = `translate(${e.clientX/2}px, ${e.clientY/2}px)`;
+            PARALAX_ICON6.style.transform = `translate(${e.clientX/14}px, ${e.clientY/14}px)`;
+            PARALAX_ICON7.style.transform = `translate(${e.clientX/10}px, ${e.clientY/10}px)`;
+            PARALAX_ICON8.style.transform = `translate(${e.clientX/7}px, ${e.clientY/7}px)`;
         }
-      }
+    })
 })
-
 

@@ -22,7 +22,26 @@
         position: absolute;
         @include text-title;
         color: $white;
+        font-size: 16px;
+        letter-spacing: 6px;
+        text-align: center;
+        text-transform: uppercase;
+        animation: text 4s infinite;
+        
     }
+
+    @keyframes text {
+        0% {
+            color: transparent;
+        }
+        30% {
+            letter-spacing: 15px;
+        }
+        85% {
+            letter-spacing: 6px;
+        }
+    }
+
     a {
         position: absolute;
         bottom: 5px;

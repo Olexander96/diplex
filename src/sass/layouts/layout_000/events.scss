@@ -39,6 +39,7 @@
                 height: 32px;
                 outline: none;
                 border: transparent;
+                z-index: 3;
                 cursor: pointer;
 
                 &:last-child {

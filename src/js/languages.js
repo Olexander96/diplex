@@ -28,9 +28,9 @@ const langArr = {
     },
     // intro section
     'intro-title': {
-        'en': 'Welcome to Diplex Group',
-        'ua': 'Вас вітає Diplex Group',
-        'ru': 'Вас приветствует Diplex Group',
+        'en': 'Welcome to',
+        'ua': 'Вас вітає',
+        'ru': 'Вас приветствует',
     },
     // hero section
     'hero-info': {
