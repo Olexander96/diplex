@@ -22,9 +22,9 @@ const langArr = {
         'ru': 'Обучение',
     },
     'nav-4': {
-        'en': 'Cooperation',
-        'ua': 'Співробітництво',
-        'ru': 'Сотрудничество',
+        'en': 'Contacts',
+        'ua': 'Контакти',
+        'ru': 'Контакты',
     },
     // intro section
     'intro-title': {
@@ -352,5 +352,62 @@ const langArr = {
         'en': 'Open in Telegram',
         'ua': 'Відкрити в Telegram',
         'ru': 'Открыть в Telegram',
+    },
+
+    // footer
+    'footer-link1': {
+        'en': 'Home',
+        'ua': 'Головна',
+        'ru': 'Главная',
+    },
+    'footer-link2': {
+        'en': 'Diplex coin',
+        'ua': 'Діплекс Монета',
+        'ru': 'Диплекс Монета',
+    },
+    'footer-link3': {
+        'en': 'Google map',
+        'ua': 'Гугл Карта',
+        'ru': 'Гугл Карта',
+    },
+    'footer-link4': {
+        'en': 'Wallet',
+        'ua': 'Гаманець',
+        'ru': 'Бумажник',
+    },
+    'footer-link5': {
+        'en': 'About us',
+        'ua': 'Про нас',
+        'ru': 'О нас',
+    },
+    'footer-download1': {
+        'en': 'Download Windows',
+        'ua': 'Завантажити Windows',
+        'ru': 'Загрузить Windows',
+    },
+    'footer-download2': {
+        'en': 'Download Mac OC',
+        'ua': 'Завантажити Mac OC',
+        'ru': 'Загрузить Mac OC',
+    },
+    'footer-download3': {
+        'en': 'Download Linux',
+        'ua': 'Завантажити Linux',
+        'ru': 'Загрузить Linux',
+    },
+    'footer-button1': {
+        'en': 'Buy DLX',
+        'ua': 'Купити DLX',
+        'ru': 'Купить DLX',
+    },
+    'footer-button2': {
+        'en': 'Connect with us',
+        'ua': 'Зв\'язатися з нами',
+        'ru': 'Связаться с нами',
+    },
+    'footer-last-text': {
+        'en': '2020 Diplex. All rights reserved',
+        'ua': '2020 Diplex. Всі права захищені',
+        'ru': '2020 Diplex. Все права защищены',
     },
 }
