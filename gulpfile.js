@@ -40,7 +40,7 @@ function js() {
         .pipe(browsersync.stream())
 }
 function html() {
-    return src('./src/index.html')
+    return src('./src/*.html')
         .pipe(dest('./dist/'))
         .pipe(browsersync.stream())
 }
