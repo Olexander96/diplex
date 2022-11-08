@@ -70,27 +70,28 @@ const PARTNERS_SLIDER = tns({
 
 const EVENTS_SLIDER = tns({
     container: '.events-slider',
-    // mode: 'gallery',
     lazyload: true,
     speed: 500,
     slideBy: 1,
     mouseDrag: true,
-    // autoplay: true,
+    autoplay: true,
     autoplayButtonOutput: false,
     // fixedWidth: 227,
     autoWidth: true,
-    viewportMax: 'autoWidth',
     controlsContainer: '.events-slider-arrows',
-    center: true,
+    // center: true,
     responsive: {
         000: {
           items: 1,
+          center: true,
         },
         576: {
             items: 3,
+            center: false,
         },
         1200: {
           items: 5,
+          center: false,
         }
       }
 })
