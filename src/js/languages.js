@@ -410,4 +410,27 @@ const langArr = {
         'ua': '2020 Diplex. Всі права захищені',
         'ru': '2020 Diplex. Все права защищены',
     },
+
+    // сontacts
+    'contacts-link1': {
+        'en': 'Go to',
+        'ua': 'Перейти',
+        'ru': 'Перейти',
+    },
+    'contacts-link2': {
+        'en': 'Go to',
+        'ua': 'Перейти',
+        'ru': 'Перейти',
+    },
+    'contacts-link3': {
+        'en': 'Go to',
+        'ua': 'Перейти',
+        'ru': 'Перейти',
+    },
+    'contacts-link4': {
+        'en': 'Go to',
+        'ua': 'Перейти',
+        'ru': 'Перейти',
+    },
+
 }

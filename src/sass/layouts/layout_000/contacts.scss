@@ -1,0 +1,154 @@
+.contacts {
+    background: url('../img/bg-icon.svg') 3% 3%, 
+                url('../img/bg-icon.svg') 5% 65%,
+                url('../img/bg-icon-small.svg') 10% 10%,
+                url('../img/bg-icon.svg') 30% 10%,
+                url('../img/bg-icon-small.svg') 33% 93%,
+                url('../img/bg-icon.svg') 45% 98%,
+                url('../img/bg-icon-small.svg') 60% 98%,
+                url('../img/bg-icon-small.svg') 65% 10%,
+                url('../img/bg-icon.svg') 85% 8%,
+                url('../img/bg-icon-small.svg') 95% 15%,
+                url('../img/bg-icon-small.svg') 97% 90%;
+    background-repeat: no-repeat;
+    background-color: $white;
+
+    .container {
+        padding-top: 115px;
+        padding-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include text-title;
+    }
+
+    &-title {
+        margin-bottom: 50px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 23px;
+            margin-left: 23px;
+            margin-bottom: 20px;
+            
+
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: $silverBG;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+
+                svg {
+                    height: auto;
+                    &:nth-of-type(1) {
+                        width: 50px;
+                    }
+
+                    &:nth-of-type(2) {
+                        width: 29px;
+                    }
+                    &:nth-of-type(2) {
+                        width: 34px;
+                        height: 50px;
+                    }
+                }
+            }
+
+            p {
+                text-transform: uppercase;
+                color: $blue;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            span {
+                font-size: 20px;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    &-subtitle {
+        margin-bottom: 50px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 55px;
+            margin-left: 55px;
+            margin-bottom: 20px;
+
+            
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: $silverBG;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+
+                svg {
+                    height: auto;
+                    width: 50px;
+
+                    &:nth-of-type(3) {
+                        width: 25px;
+                    }
+                }
+            }
+
+            p {
+                text-transform: uppercase;
+                color: $blue;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                display: block;
+                color: $black;
+                border-bottom: 1px solid $black;
+                transition: 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

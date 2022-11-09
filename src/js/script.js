@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const SELECT = document.querySelector('.header-dropdown');
 
     SELECT.addEventListener('change', changeURL);
-
+    
     const allLanguages = ['en', 'ua', 'ru'];
     // додавання приставки hash в кінець url
     function changeURL() {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function changeLanguage() {
-        let hash = window.location.hash;
+        let hash = window.location.hash;    
         hash = hash.substring(1);
         // console.log(hash)
         // помилка при невірному url
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     changeLanguage()
 
     // tiny slider1 --------------------------------------------------------------------------------------------!
-    const PARTNERS_SLIDER = tns({
+    const PARTNERS_SLIDER = tns ({
         container: '.partners-slider',
         lazyload: true,
         speed: 600,
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 
-    const EVENTS_SLIDER = tns({
+    const EVENTS_SLIDER = tns ({
         container: '.events-slider',
         lazyload: true,
         speed: 500,
