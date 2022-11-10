@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
             location.href = window.location.pathname + "#ua";
             location.reload()
         }
+
         SELECT.value = hash;
+
         // зміна мови для title
-        document.querySelector('title').textContent = langArr['title'][hash];
-        
         for (let key in langArr) {
             let elem  = document.querySelector(".lng-" + key);
             if (elem) {
@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const PARALAX_ICON6 = hero.querySelector('.hero-parallax6');
     const PARALAX_ICON7 = hero.querySelector('.hero-parallax7');
     const PARALAX_ICON8 = hero.querySelector('.hero-parallax8');
+
     const fluidcoin = window.matchMedia("(min-width: 576px)");
     hero.addEventListener('mousemove', function(e) {
         if (fluidcoin.matches) {

@@ -1,6 +1,6 @@
-
-  let CENTER = { lat: 52.375662619320046, lng: 4.896047026672821 };
-  let ADRESS = { lat: 52.36723292927121, lng: 4.880492552869326 };
+function initMap () {
+    let CENTER = { lat: 52.375662619320046, lng: 4.896047026672821 };
+    let ADRESS = { lat: 52.36723292927121, lng: 4.880492552869326 };
     
     const MARKER_IMG = {
         url: "./img/map-flag.png",
@@ -28,6 +28,9 @@
         INFO.open(MAP, marker);
     })
 
+}
+
+  
 
 
 

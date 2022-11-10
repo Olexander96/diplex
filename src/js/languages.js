@@ -1,11 +1,11 @@
 
 const langArr = {
     // header items
-    'title': {
-        'en': 'DiPlex investment in cryptocurrency',
-        'ua': 'DiPlex інвестиції в криптовалюту',
-        'ru': 'DiPlex инвестиции в криптовалюту',
-    },
+    // 'title': {
+    //     'en': 'DiPlex investment in cryptocurrency',
+    //     'ua': 'DiPlex інвестиції в криптовалюту',
+    //     'ru': 'DiPlex инвестиции в криптовалюту',
+    // },
     'nav-1': {
         'en': 'Home',
         'ua': 'Головна',
@@ -412,6 +412,11 @@ const langArr = {
     },
 
     // сontacts
+    'contacts-page-title': {
+        'en': 'Diplex contacts',
+        'ua': 'Diplex контакти',
+        'ru': 'Diplex контакты',
+    },
     'contacts-title': {
         'en': 'Contacts Diplex',
         'ua': 'Контакти Diplex',
