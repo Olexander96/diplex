@@ -17,9 +17,9 @@ const langArr = {
         'ru': 'Где использовать DLX?',
     },
     'nav-3': {
-        'en': 'Studing',
-        'ua': 'Навчання',
-        'ru': 'Обучение',
+        'en': 'Exchange rates',
+        'ua': 'Курси валют',
+        'ru': 'Курсы валют',
     },
     'nav-4': {
         'en': 'Contacts',

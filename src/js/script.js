@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    
     // зміна мови--------------------------------------------------------------------------------------------!
     const SELECT = document.querySelector('.header-dropdown');
 
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function changeLanguage() {
         let hash = window.location.hash;    
-        hash = hash.substring(1);
+        hash = hash.substring(1); 
         // console.log(hash)
         // помилка при невірному url
         if (!allLanguages.includes(hash)) {
@@ -37,67 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     changeLanguage()
 
-    // tiny slider1 --------------------------------------------------------------------------------------------!
-    const PARTNERS_SLIDER = tns ({
-        container: '.partners-slider',
-        lazyload: true,
-        speed: 600,
-        mouseDrag: true,
-        autoplay: true,
-        autoplayButtonOutput: false,
-        controlsContainer: '.partners-slider-arrows',
-        center: true,
-        responsive: {
-            000: {
-            items: 1,
-            gutter: 0,
-            },
-            340: {
-                items: 2,
-                gutter: 5,
-            },
-            576: {
-                items: 3,
-                gutter: 10,
-            },
-            768: {
-                items: 4,
-                gutter: 10,
-            },
-            1200: {
-            items: 5,
-            gutter: 20,
-            }
-        }
-    })
-
-    const EVENTS_SLIDER = tns ({
-        container: '.events-slider',
-        lazyload: true,
-        speed: 500,
-        slideBy: 1,
-        mouseDrag: true,
-        autoplay: true,
-        autoplayButtonOutput: false,
-        // fixedWidth: 227,
-        autoWidth: true,
-        controlsContainer: '.events-slider-arrows',
-        // center: true,
-        responsive: {
-            000: {
-            items: 1,
-            center: true,
-            },
-            576: {
-                items: 3,
-                center: false,
-            },
-            1200: {
-            items: 5,
-            center: false,
-            }
-        }   
-    })
     // prallax --------------------------------------------------------------------------------------------!
     const PARALAX_ICON1 = hero.querySelector('.hero-parallax1');
     const PARALAX_ICON2 = hero.querySelector('.hero-parallax2');
@@ -115,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
             PARALAX_ICON3.style.transform = `translate(${e.clientX/10}px, ${e.clientY/10}px)`;
             PARALAX_ICON4.style.transform = `translate(${e.clientX/7}px, ${e.clientY/7}px)`;
             PARALAX_ICON5.style.transform = `translate(${e.clientX/2}px, ${e.clientY/2}px)`;
-            PARALAX_ICON6.style.transform = `translate(${e.clientX/14}px, ${e.clientY/14}px)`;
-            PARALAX_ICON7.style.transform = `translate(${e.clientX/10}px, ${e.clientY/10}px)`;
+            PARALAX_ICON6.style.transform = `translate(${e.clientX/17}px, ${e.clientY/17}px)`;
+            PARALAX_ICON7.style.transform = `translate(${e.clientX/9}px, ${e.clientY/9}px)`;
             PARALAX_ICON8.style.transform = `translate(${e.clientX/7}px, ${e.clientY/7}px)`;
         }
     })
