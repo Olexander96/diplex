@@ -412,6 +412,16 @@ const langArr = {
     },
 
     // сontacts
+    'contacts-title': {
+        'en': 'Contacts Diplex',
+        'ua': 'Контакти Diplex',
+        'ru': 'Контакты Diplex',
+    },
+    'contacts-subtitle': {
+        'en': 'Diplex Social Networks',
+        'ua': 'Соціальні мережі Diplex',
+        'ru': 'Социальные сети Diplex',
+    },
     'contacts-link1': {
         'en': 'Go to',
         'ua': 'Перейти',

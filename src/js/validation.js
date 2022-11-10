@@ -32,7 +32,7 @@ form.onsubmit = function() {
 
     if (!validateName(nameVal)) {
         document.querySelector('.name--error').textContent = 'name not valid!'
-        console.log('name not valid');
+        // console.log('name not valid');
         inputText.classList.add('input--error');
         return false
     } else {
@@ -48,7 +48,7 @@ form.onsubmit = function() {
 
     if (!validateEmail(emailVal)) {
         document.querySelector('.email--error').textContent = 'email not valid!';
-        console.log('email not valid');
+        // console.log('email not valid');
         inputEmail.classList.add('input--error');
         return false
     } else {
