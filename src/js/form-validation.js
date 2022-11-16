@@ -7,37 +7,24 @@ let inputEmail = document.querySelector('.js-input-email');
 form.onsubmit = function() {
     let nameVal = inputText.value;
     let emailVal = inputEmail.value;
-    let emptyInputs = Array.from(formInputs).filter(input => input.value === '')
-
-    // перевірка - чи заповнені inputs
-    formInputs.forEach(function(input) {
-        if (input.value === '') {
-            input.classList.add('input--error')
-        } else {
-            input.classList.remove('input--error')
-        }
-    })
-
-    if (emptyInputs.length !== 0) { // якщо пустих інпутів більше 0
-        console.log('input not field');
-        return false
-    }
-
-    // перевірка name
 
     function validateName(name) {
         let regex = /([a-zA-Z]){2,}/;
         return regex.test(String(name).toLowerCase());
     }
 
-    if (!validateName(nameVal)) {
-        document.querySelector('.name--error').textContent = 'name not valid!'
-        // console.log('name not valid');
-        inputText.classList.add('input--error');
-        return false
+    if (nameVal !== '') {
+        if (!validateName(nameVal)) {
+            document.querySelector('.name--error').textContent = 'Name not valid! Example - Alex, John'
+            inputText.classList.add('input--error');
+            return false
+        } else {
+            inputText.classList.remove('input--error');
+            document.querySelector('.name--error').textContent = '';
+        }
     } else {
-        inputText.classList.remove('input--error');
-        document.querySelector('.name--error').textContent = '';
+        document.querySelector('.name--error').textContent = 'Empty name field! '
+        inputText.classList.add('input--error');
     }
 
     // перевірка email
@@ -46,15 +33,19 @@ form.onsubmit = function() {
         return regex.test(String(email).toLowerCase())
     }
 
-    if (!validateEmail(emailVal)) {
-        document.querySelector('.email--error').textContent = 'email not valid!';
-        // console.log('email not valid');
+    if (emailVal !== '') {
+        if (!validateEmail(emailVal)) {
+            document.querySelector('.email--error').textContent = 'Email not valid! Example - alex96@gmail.com';
+            inputEmail.classList.add('input--error');
+            return false
+        } else {
+            inputEmail.classList.remove('input--error');
+            document.querySelector('.email--error').textContent = '';
+            return false
+        }
+    } else {
+        document.querySelector('.email--error').textContent = 'Empty email field!';
         inputEmail.classList.add('input--error');
         return false
-    } else {
-        inputEmail.classList.remove('input--error');
-        document.querySelector('.email--error').textContent = '';
-        return false
-    }
-    
+    } 
 }
