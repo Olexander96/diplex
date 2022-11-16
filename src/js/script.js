@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    changeLanguage()
+    changeLanguage();
 
     // prallax --------------------------------------------------------------------------------------------!
     const PARALAX_ICON1 = hero.querySelector('.hero-parallax1');
